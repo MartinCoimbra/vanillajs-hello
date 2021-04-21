@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {};
 
-/* Primero llamamos a el evento click(submit) */
+/* Primero llamamos a el evento click(submit)*/
 var form = document.getElementById("formulario");
 
 form.addEventListener("submit", function(event) {
