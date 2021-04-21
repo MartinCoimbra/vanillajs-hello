@@ -9,10 +9,14 @@ window.onload = function() {
   let pronoun = ["the", "our"];
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
+  let total;
 
-  pronoun.forEach(elementP, index => {
-    adj.forEach(elementA, index => {
-      noun.forEach(elementN, index => {});
+  pronoun.forEach(function(elementP) {
+    adj.forEach(function(elementA) {
+      noun.forEach(function(elementN) {
+        console.log(elementP + elementA + elementN + ".com");
+        total = [];
+      });
     });
   });
 };
