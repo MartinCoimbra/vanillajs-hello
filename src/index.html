@@ -12,18 +12,189 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <form id="formulario">
+      <div class="container mt-4">
+        <div class="card">
+          <div class="card-header">
+            <h1>Formulario</h1>
+          </div>
+          <div class="card-body">
+            <!-- Formulario -->
+            <div class="row">
+              <div class="col-12">
+                <div id="alerta" class="alert alert-danger d-none">
+                  Completa los campos correspondientes vacio
+                </div>
+              </div>
+            </div>
+            <!-- Formulario -->
+
+            <div class="row">
+              <div class="col-5">
+                <label for="exampleInputText">Card #</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputText"
+                  placeholder="XXXXXXXXXXXX"
+                />
+              </div>
+              <div class="col-3">
+                <label for="exampleInputText2">CVC #</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputText2"
+                  placeholder="00000"
+                />
+              </div>
+              <div class="col-4">
+                <label for="exampleInputText3">Amount #</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputText3"
+                  placeholder="Amount"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="exampleInputText">First Name</label>
+                <input type="text" id="firsname" class="form-control" />
+              </div>
+              <div class="col-6">
+                <label for="exampleInputText">Last Name</label>
+                <input
+                  type="text"
+                  id="lasname"
+                  class="form-control"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="exampleInputText">City</label>
+                <input
+                  type="text"
+                  id="cityS"
+                  class="form-control"
+                  placeholder=""
+                />
+              </div>
+              <div class="col-3 ">
+                <label for="exampleInputText">Nacionalidad</label>
+
+                <select class="custom-select" id="inputGroupSelect04">
+                  <option selected>Soy de...</option>
+                  <option value="1">Uruguay</option>
+                  <option value="2">Argentina</option>
+                  <option value="3">Chile</option>
+                </select>
+              </div>
+              <div class="col-3">
+                <label for="exampleInputText">Postal Code</label>
+                <input
+                  type="text"
+                  id="postal"
+                  class="form-control"
+                  placeholder="XXXXXXXXXXXX"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="exampleFormControlTextarea1"
+                  >Example textarea</label
+                >
+                <div class="col-3">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div
+                        id="bordeRadio"
+                        class=" text-white input-group-text p-2 bg-dark rounded"
+                      >
+                        <input
+                          id="radio1"
+                          class="mx-2"
+                          name="fas"
+                          type="radio"
+                          aria-label="Radio button for following text input"
+                        />
+                        <!-- ICONO-1 -->
+                        <i class="fab fa-cc-mastercard"></i>
+                        <!--  -->
+                        <input
+                          id="radio2"
+                          class="mx-2"
+                          name="fas"
+                          type="radio"
+                          aria-label="Radio button for following text input"
+                        />
+                        <!-- ICONO-2 -->
+                        <i class="fab fa-cc-visa"></i>
+                        <!--  -->
+                        <input
+                          id="radio3"
+                          class="mx-2"
+                          name="fas"
+                          type="radio"
+                          aria-label="Radio button for following text input"
+                        />
+                        <!-- ICONO-3 -->
+                        <i class="fab fa-cc-diners-club"></i>
+                        <!--  -->
+                        <input
+                          id="radio4"
+                          class="mx-2"
+                          name="fas"
+                          type="radio"
+                          aria-label="Radio button for following text input"
+                        />
+                        <!-- ICONO-4 -->
+                        <i class="fab fa-cc-amex"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <label for="exampleFormControlTextarea1"
+                  >Example textarea</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer ">
+            <!-- Boton abajo -->
+            <div class="row ">
+              <div class="col-12 d-flex justify-content-end">
+                <button class="btn btn-secondary mx-1" role="button">
+                  Cancel
+                </button>
+                <input
+                  class="btn btn-primary "
+                  role="button"
+                  type="submit"
+                  placeholder="Enviar"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>
